@@ -1,0 +1,19 @@
+name = "mcp-demo"
+main = "src/index.ts"
+compatibility_date = "2025-05-19"
+
+# Workers MCP specific configuration
+compatibility_flags = ["nodejs_compat", "workers_mcp_api"]
+
+# Define environment variables for development
+[vars]
+# Production vars can be added here
+
+# Define dev variables that are loaded from .dev.vars file
+[env.dev]
+# Development-specific configuration
+
+# Configure asset handling for static files
+[site]
+bucket = "./public"
+
